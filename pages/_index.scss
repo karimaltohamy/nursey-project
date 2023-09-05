@@ -1,0 +1,138 @@
+$primary-color: #ec6c01;
+$primary-color2: #156e81;
+$bg-color: #fdf9e0;
+
+// start hero_section
+.hero_section {
+  height: calc(100vh - 108px);
+
+  .container {
+    height: 100%;
+  }
+
+  .line {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    > div {
+      width: 50%;
+    }
+
+    .text {
+      .title_hero {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.8;
+        color: gray;
+      }
+      .main_btn {
+        font-size: 19px;
+        padding: 7px 40px;
+        border-radius: 50px;
+      }
+
+      .info {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+
+        .images {
+          display: flex;
+          align-items: center;
+
+          .image {
+            &:nth-child(2) {
+              transform: translateX(10px);
+            }
+            &:nth-child(3) {
+              transform: translateX(20px);
+            }
+            &:nth-child(4) {
+              transform: translateX(30px);
+            }
+            img {
+              width: 55px;
+              height: 55px;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        .num {
+          font-size: 35px;
+          font-weight: 800;
+          margin-bottom: 0;
+
+          span {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .image {
+      height: 100%;
+      display: flex;
+      align-items: end;
+      position: relative;
+
+      .banner_img {
+        position: relative;
+
+        > img {
+          position: relative;
+          z-index: 99;
+          width: 100%;
+        }
+
+        .banner_border {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .small_slider {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border: 10px solid white;
+        border-radius: 50%;
+        animation: scal 3s infinite alternate;
+        z-index: 999;
+
+        &.two {
+          left: auto;
+          top: auto;
+          bottom: 20px;
+          right: 20px;
+        }
+
+        img {
+          width: 130px;
+          height: 130px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+// end hero_section
+
+// animation
+@keyframes scal {
+  100% {
+    transform: scale(1.2);
+  }
+}
