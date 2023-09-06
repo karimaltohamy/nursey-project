@@ -58,3 +58,11 @@ main {
   display: block;
   width: fit-content;
 }
+
+@media (max-width: 768px) {
+  .main_btn {
+    padding: 3px 12px !important;
+    font-size: 13px !important;
+    margin: auto;
+  }
+}

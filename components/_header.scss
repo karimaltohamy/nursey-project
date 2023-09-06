@@ -47,16 +47,16 @@ $bg-color: #fdf9e0;
 
     .line {
       .left {
-        .lang_list {
-          .head {
-            img {
-              width: 25px;
-              height: 25px;
-              border-radius: 50%;
+        .infomations {
+          gap: 10px;
+
+          .item {
+            i {
+              font-size: 12px;
             }
 
             span {
-              font-size: 15px;
+              font-size: 13px;
             }
           }
         }
@@ -64,9 +64,10 @@ $bg-color: #fdf9e0;
 
       .right {
         .social_media {
+          gap: 10px;
           a {
             i {
-              font-size: 13px;
+              font-size: 11px;
             }
           }
         }
@@ -159,6 +160,10 @@ header {
     }
 
     .info_header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
       .btn_menu {
         display: none;
       }
@@ -172,7 +177,7 @@ header {
     .container {
       .logo {
         img {
-          width: 55px;
+          width: 85px;
         }
       }
 
@@ -181,8 +186,6 @@ header {
       }
 
       .info_header {
-        display: block;
-
         .btn_menu {
           display: block;
           cursor: pointer;
