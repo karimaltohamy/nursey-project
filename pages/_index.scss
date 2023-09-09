@@ -199,6 +199,20 @@ $bg-color: #fdf9e0;
     }
   }
 }
+
+@media (max-width: 380px) {
+  .hero_section {
+    .line {
+      .image {
+        .banner_img {
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
 // end hero_section
 
 // start about_us_section

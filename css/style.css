@@ -621,6 +621,11 @@ footer .footer_bottom p {
     height: 80px;
   }
 }
+@media (max-width: 380px) {
+  .hero_section .line .image .banner_img img {
+    width: 60%;
+  }
+}
 .about_us_section {
   padding: 80px 0;
 }
