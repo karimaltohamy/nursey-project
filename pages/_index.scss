@@ -91,7 +91,8 @@ $bg-color: #fdf9e0;
         > img {
           position: relative;
           z-index: 99;
-          width: 100%;
+          width: 90%;
+          max-width: 100%;
         }
 
         .banner_border {
@@ -210,6 +211,7 @@ $bg-color: #fdf9e0;
       font-weight: 700;
       color: $primary-color;
       margin-bottom: 8px;
+      display: block;
     }
 
     .title {
