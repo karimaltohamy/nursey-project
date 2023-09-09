@@ -18,6 +18,8 @@
     />
     <!-- owl carousel -->
     <link rel="stylesheet" href="./css/carsosuel.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <main>
@@ -66,11 +68,11 @@
           </a>
 
           <div class="links">
-            <a href="index.html" class="link active">الرئيسيه</a>
-            <a href="about-us.html" class="link">من نحن</a>
-            <a href="our-services.html" class="link"> خدماتنا</a>
-            <a href="our-services.html" class="link"> معلومات و نصائح</a>
-            <a href="contact-us.html" class="link">تواصل معنا</a>
+            <a href="#home" class="link active">الرئيسيه</a>
+            <a href="#about-us" class="link">من نحن</a>
+            <a href="#our-services" class="link"> خدماتنا</a>
+            <a href="#blog" class="link"> معلومات و نصائح</a>
+            <a href="#contact-us" class="link">تواصل معنا</a>
           </div>
 
           <div class="info_header">
@@ -96,25 +98,66 @@
       </header>
       <!-- end header -->
 
+      <!-- start menu mobile -->
+      <div class="overflow"></div>
+      <div class="menu_mobile">
+        <div class="head">
+          <img src="./images/logo.png" alt="logo" />
+
+          <i class="fa-solid fa-xmark btn_close_menu"></i>
+        </div>
+        <div class="links">
+          <a href="#home" class="link active">الرئيسيه</a>
+          <a href="#about-us" class="link">من نحن</a>
+          <a href="#our-services" class="link"> خدماتنا</a>
+          <a href="#blog" class="link"> معلومات و نصائح</a>
+          <a href="#contact-us" class="link">تواصل معنا</a>
+        </div>
+      </div>
+      <!-- end menu mobile -->
+
       <!-- start hero section -->
-      <div class="hero_section">
+      <div class="hero_section" id="home">
         <div class="container">
           <div class="line">
             <div class="text">
               <div class="content">
-                <h1 class="title_hero">
+                <h1
+                  class="title_hero"
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  data-aos-delay="500"
+                >
                   افضل خدمات التمريض المنزلي <br />
                   ورعايه المسنين
                 </h1>
-                <p class="desc">
+                <p
+                  class="desc"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="500"
+                >
                   مركز متخصص يُقدم أفضل خدمات التمريض المنزلي ورعاية المسنين و
                   العلاج الطبيعي في مصر، من خلال فريق متكامل (ذكور/اناث) من
                   أطباء وتمريض وأخصائيّ العلاج الطبيعي ذوي الخبرة والكفاءة
                   العالية.
                 </p>
-                <a href="#" class="main_btn"> حدد موعدا</a>
+                <a
+                  href="#"
+                  class="main_btn"
+                  data-aos="fade-up"
+                  data-aos-duration="900"
+                  data-aos-delay="500"
+                >
+                  حدد موعدا</a
+                >
 
-                <div class="info">
+                <div
+                  class="info"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="500"
+                >
                   <div class="images">
                     <div class="image">
                       <img
@@ -189,7 +232,7 @@
     </main>
 
     <!-- start about us -->
-    <div class="about_us_section">
+    <div class="about_us_section" id="about-us">
       <div class="container">
         <div class="head">
           <span class="subtitle">معلومات عنا</span>
@@ -244,7 +287,7 @@
     <!-- end about us -->
 
     <!-- start our services -->
-    <div class="our_services">
+    <div class="our_services" id="our-services">
       <div class="container">
         <div class="text-center">
           <span class="subtitle"> خدماتنا </span>
@@ -635,7 +678,7 @@
     <!-- end  feedback section -->
 
     <!-- start our blog section -->
-    <div class="our_blog_section">
+    <div class="our_blog_section" id="blog">
       <div class="container">
         <span class="subtitle">معلومات و نصائح</span>
         <h1 class="title">
@@ -807,7 +850,8 @@
     </div>
     <!-- end our blog section -->
 
-    <!-- <div class="contact_section">
+    <!-- start contact section -->
+    <div class="contact_section" id="contact-us">
       <div class="container">
         <div class="line">
           <div class="left">
@@ -862,7 +906,7 @@
               <img src="./images/contact-us.jpg" alt="" loading="lazy" />
             </div>
             <div class="features">
-              <div class="feature">
+              <a href="#" class="feature">
                 <div class="icon">
                   <img src="./images/mail.png" alt="" loading="lazy" />
                 </div>
@@ -870,7 +914,7 @@
                   <h4>البريد الإلكتروني</h4>
                   <div class="desc_feature">Support@Domain.Com</div>
                 </div>
-              </div>
+              </a>
               <a href="#" class="feature">
                 <div class="icon">
                   <img src="./images/ring-phone.png" alt="" loading="lazy" />
@@ -886,8 +930,48 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+    <!-- end contact section -->
 
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="footer_top">
+          <h4>تابعنا</h4>
+          <div class="social_media">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="info">
+            <div class="logo">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <div class="links">
+              <a href="#home" class="link">الرئيسيه</a>
+              <a href="#about-us" class="link">من نحن</a>
+              <a href="#contact-us" class="link">تواصل معنا</a>
+            </div>
+          </div>
+          <p>© 2022. جميع الحقوق محفوظة 5Code.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
       integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="

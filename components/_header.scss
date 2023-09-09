@@ -199,3 +199,128 @@ header {
   }
 }
 // end header
+
+// start menu_mobile
+
+.overflow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.393);
+  z-index: 998;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.menu_mobile {
+  padding: 20px;
+  color: black;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 99999;
+  transition: all 0.4s;
+
+  &.active {
+    right: 0;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    img {
+      width: 100px;
+    }
+
+    i {
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+
+  .links {
+    text-align: center;
+    .link {
+      font-size: 20px;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 15px;
+
+      svg {
+        width: 17px;
+        color: gray;
+      }
+
+      &.active {
+        color: $primary-color !important;
+      }
+    }
+
+    .link_list {
+      position: relative;
+
+      &:hover {
+        .list {
+          opacity: 1;
+          z-index: 100;
+          top: 60px;
+        }
+      }
+
+      .list {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        font-weight: 600;
+
+        padding: 8px 10px;
+        border-radius: 5px;
+        width: 170px;
+        border: 1px solid #e2e2e2;
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.4s;
+
+        .item {
+          display: block;
+          font-weight: 600;
+          color: #37373c !important;
+
+          &:hover {
+            color: $primary-color !important;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .btn_contact {
+    background: linear-gradient(144deg, #405fff, #5b42f3 50%, #00ddeb);
+    color: white !important;
+    font-weight: 500;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+}
+// end menu_mobile
